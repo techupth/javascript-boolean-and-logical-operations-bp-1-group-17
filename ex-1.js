@@ -1,10 +1,14 @@
 // Exercise #1: Event Conditions
 
 // Start coding here
-let isOver18;
-let hasCriminalBlacklist;
-let isThai;
+let isOver18 = true;
+let hasCriminalBlacklist = false;
+let isThai = true;
 
-let isAllow;
+let qualify = isOver18 && hasCriminalBlacklist && isThai;
 
-console.log(isAllow);
+let James = isOver18 && hasCriminalBlacklist && !isThai;
+
+let isAllow = qualify && James;
+
+console.log(qualify);
